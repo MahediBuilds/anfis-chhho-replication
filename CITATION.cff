@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "ANFIS-ChHHO controlled replication: code and data pipeline"
+type: software
+license: MIT
+repository-code: "https://github.com/MahediBuilds/anfis-chhho-replication"
+version: "1.0.0"
+date-released: "2026-11-07"
+authors:
+  - name: "Adarsha Sagar H V"
+    affiliation: "B.M.S. College of Engineering, Bengaluru"
+  - name: "Thanu George"
+    affiliation: "B.M.S. College of Engineering, Bengaluru"
+  - name: "Zain Mahedi"
+    affiliation: "B.M.S. College of Engineering, Bengaluru"
+  - name: "Tanish Agrawal"
+    affiliation: "B.M.S. College of Engineering, Bengaluru"
+  - name: "Vaibhav S Keerthi"
+    affiliation: "B.M.S. College of Engineering, Bengaluru"
+keywords: [ANFIS, "Harris Hawks optimisation", metaheuristics, "stock forecasting", replication, reproducibility]

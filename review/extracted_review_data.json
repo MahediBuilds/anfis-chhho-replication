@@ -1,0 +1,1069 @@
+[
+ {
+  "id": "B",
+  "key": "base",
+  "label": "Mohamed et al. (case study)",
+  "year": 2025,
+  "domain": "Stock indices (EGX, NASDAQ, S&P 500)",
+  "hybrid": "ANFIS-ChHHO",
+  "baselines": "Classical ANFIS",
+  "financial": true,
+  "checklist": {
+   "split": "Not stated",
+   "test_isolated": "Yes",
+   "repeated_runs": "No",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "EGX-30",
+    "metric": "RMSE",
+    "hybrid": 38.2695,
+    "best": 40.687,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 5.94170128050728,
+    "diff": null
+   },
+   {
+    "name": "EGX-70",
+    "metric": "RMSE",
+    "hybrid": 2.2414,
+    "best": 2.5815,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 13.17451094325005,
+    "diff": null
+   },
+   {
+    "name": "EGX-100",
+    "metric": "RMSE",
+    "hybrid": 3.8001,
+    "best": 3.9093,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 2.793338960939298,
+    "diff": null
+   },
+   {
+    "name": "NASDAQ",
+    "metric": "RMSE",
+    "hybrid": 2.1893,
+    "best": 3.0418,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 28.02616871589191,
+    "diff": null
+   },
+   {
+    "name": "S&P 500",
+    "metric": "RMSE",
+    "hybrid": 38.1724,
+    "best": 55.4932,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 31.212472879560018,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L1",
+  "key": "zeng",
+  "label": "Zeng et al.",
+  "year": 2025,
+  "domain": "6 stock indices",
+  "hybrid": "PSO-LSTM",
+  "baselines": "LSTM, SVM, MLP, GRU, BiLSTM, RF, KNN, XGB, RNN",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Not stated",
+   "repeated_runs": "Yes",
+   "significance": "Partly",
+   "runtime": "No",
+   "baseline_tuned": "Partly"
+  },
+  "datasets": [
+   {
+    "name": "DJIA",
+    "metric": "RMSE",
+    "hybrid": 83.381,
+    "best": 71.051,
+    "best_name": "SVM",
+    "lower": true,
+    "rel": -17.35373182643453,
+    "diff": null
+   },
+   {
+    "name": "S&P 500",
+    "metric": "RMSE",
+    "hybrid": 16.196,
+    "best": 12.959,
+    "best_name": "MLP",
+    "lower": true,
+    "rel": -24.978779226792206,
+    "diff": null
+   },
+   {
+    "name": "Hang Seng",
+    "metric": "RMSE",
+    "hybrid": 138.132,
+    "best": 145.441,
+    "best_name": "GRU",
+    "lower": true,
+    "rel": 5.025405490886337,
+    "diff": null
+   },
+   {
+    "name": "Nikkei 225",
+    "metric": "RMSE",
+    "hybrid": 230.675,
+    "best": 196.214,
+    "best_name": "GRU",
+    "lower": true,
+    "rel": -17.56296696464065,
+    "diff": null
+   },
+   {
+    "name": "CSI 300",
+    "metric": "RMSE",
+    "hybrid": 148.248,
+    "best": 96.917,
+    "best_name": "BiLSTM",
+    "lower": true,
+    "rel": -52.963876306530324,
+    "diff": null
+   },
+   {
+    "name": "Nifty 50",
+    "metric": "RMSE",
+    "hybrid": 49.931,
+    "best": 54.517,
+    "best_name": "GRU",
+    "lower": true,
+    "rel": 8.412054955335043,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L2",
+  "key": "safari",
+  "label": "Safari & Hosseini",
+  "year": 2025,
+  "domain": "7 large-cap stocks",
+  "hybrid": "FinBERT + PSO-LSTM",
+  "baselines": "1–3-layer LSTM, ARIMA",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Partly",
+   "repeated_runs": "Not stated",
+   "significance": "Not stated",
+   "runtime": "Not stated",
+   "baseline_tuned": "No"
+  },
+  "datasets": [
+   {
+    "name": "AAPL",
+    "metric": "RMSE",
+    "hybrid": 5.739,
+    "best": 11.299,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 49.2078945039384,
+    "diff": null
+   },
+   {
+    "name": "AMZN",
+    "metric": "RMSE",
+    "hybrid": 4.638,
+    "best": 6.879,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 32.57740950719581,
+    "diff": null
+   },
+   {
+    "name": "GOOG",
+    "metric": "RMSE",
+    "hybrid": 4.376,
+    "best": 8.815,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 50.357345433919456,
+    "diff": null
+   },
+   {
+    "name": "MSFT",
+    "metric": "RMSE",
+    "hybrid": 7.009,
+    "best": 16.647,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 57.8963176548327,
+    "diff": null
+   },
+   {
+    "name": "JPM",
+    "metric": "RMSE",
+    "hybrid": 4.47,
+    "best": 10.43,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 57.14285714285714,
+    "diff": null
+   },
+   {
+    "name": "UNH",
+    "metric": "RMSE",
+    "hybrid": 18.48,
+    "best": 21.625,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 14.543352601156068,
+    "diff": null
+   },
+   {
+    "name": "Toyota 7203",
+    "metric": "RMSE",
+    "hybrid": 75.37,
+    "best": 129.114,
+    "best_name": "Single-layer LSTM",
+    "lower": true,
+    "rel": 41.62523041653113,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L3",
+  "key": "gulmez",
+  "label": "Gülmez",
+  "year": 2025,
+  "domain": "10 technology stocks",
+  "hybrid": "GA + attention + neuro-fuzzy",
+  "baselines": "SVM, Decision Tree",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Partly",
+   "repeated_runs": "Partly",
+   "significance": "Not stated",
+   "runtime": "Not stated",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "AAPL",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.921,
+    "best": 0.79,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.131
+   },
+   {
+    "name": "MSFT",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.778,
+    "best": -0.166,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.9440000000000001
+   },
+   {
+    "name": "AMZN",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.462,
+    "best": 0.134,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.328
+   },
+   {
+    "name": "GOOGL",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.933,
+    "best": 0.776,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.15700000000000003
+   },
+   {
+    "name": "META",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.872,
+    "best": 0.902,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": -0.030000000000000027
+   },
+   {
+    "name": "NVDA",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.618,
+    "best": -0.727,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 1.345
+   },
+   {
+    "name": "TSLA",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.886,
+    "best": 0.633,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.253
+   },
+   {
+    "name": "INTC",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.927,
+    "best": 0.803,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.124
+   },
+   {
+    "name": "IBM",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.731,
+    "best": 0.367,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.364
+   },
+   {
+    "name": "NFLX",
+    "metric": "R2 (5-day window, Table 5)",
+    "hybrid": 0.963,
+    "best": 0.915,
+    "best_name": "SVM",
+    "lower": false,
+    "rel": null,
+    "diff": 0.04799999999999993
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L4",
+  "key": "jagadesh",
+  "label": "Jagadesh et al.",
+  "year": 2024,
+  "domain": "Nifty 50 direction",
+  "hybrid": "DOA + BCA-tuned 3D-CNN-GRU",
+  "baselines": "SVM, ANN, CNN, RNN, DNN",
+  "financial": true,
+  "checklist": {
+   "split": "Not stated",
+   "test_isolated": "Not stated",
+   "repeated_runs": "Not stated",
+   "significance": "Not stated",
+   "runtime": "Not stated",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "Nifty 50 (classification)",
+    "metric": "Accuracy %",
+    "hybrid": 99.14,
+    "best": 93.46,
+    "best_name": "ANN",
+    "lower": false,
+    "rel": null,
+    "diff": 5.680000000000007
+   },
+   {
+    "name": "Nifty 50 (classification)",
+    "metric": "AUROC",
+    "hybrid": 0.981,
+    "best": 0.98,
+    "best_name": "ANN",
+    "lower": false,
+    "rel": null,
+    "diff": 0.0010000000000000009
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L5",
+  "key": "kayhomayoon",
+  "label": "Kayhomayoon et al.",
+  "year": 2025,
+  "domain": "Drought index (SPEI)",
+  "hybrid": "ANFIS + RSA",
+  "baselines": "Classical ANFIS",
+  "financial": false,
+  "checklist": {
+   "split": "Not stated",
+   "test_isolated": "Not stated",
+   "repeated_runs": "No",
+   "significance": "Not stated",
+   "runtime": "Not stated",
+   "baseline_tuned": "Yes"
+  },
+  "datasets": [
+   {
+    "name": "Semi-arid/moderate S1",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.34,
+    "best": 0.43,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 20.93023255813953,
+    "diff": null
+   },
+   {
+    "name": "Semi-arid/moderate S2",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.28,
+    "best": 0.41,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 31.70731707317072,
+    "diff": null
+   },
+   {
+    "name": "Semi-arid/moderate S3",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.36,
+    "best": 0.9,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 60.0,
+    "diff": null
+   },
+   {
+    "name": "Semi-arid/cold S1",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.41,
+    "best": 0.53,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 22.641509433962273,
+    "diff": null
+   },
+   {
+    "name": "Semi-arid/cold S2",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.34,
+    "best": 0.42,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 19.047619047619037,
+    "diff": null
+   },
+   {
+    "name": "Semi-arid/cold S3",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.33,
+    "best": 0.42,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 21.428571428571423,
+    "diff": null
+   },
+   {
+    "name": "Arid/super-cold S1",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.3,
+    "best": 0.39,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 23.076923076923084,
+    "diff": null
+   },
+   {
+    "name": "Arid/super-cold S2",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.23,
+    "best": 0.28,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 17.85714285714286,
+    "diff": null
+   },
+   {
+    "name": "Arid/super-cold S3",
+    "metric": "Test RMSE (ANFIS+RSA)",
+    "hybrid": 0.23,
+    "best": 0.33,
+    "best_name": "ANFIS",
+    "lower": true,
+    "rel": 30.303030303030305,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L6",
+  "key": "haznedar",
+  "label": "Haznedar et al.",
+  "year": 2026,
+  "domain": "Antenna surrogate model",
+  "hybrid": "ANFIS-PSO",
+  "baselines": "ANFIS (BP, hybrid learning)",
+  "financial": false,
+  "checklist": {
+   "split": "N/A",
+   "test_isolated": "Partly",
+   "repeated_runs": "Not stated",
+   "significance": "Yes*",
+   "runtime": "Partly",
+   "baseline_tuned": "Yes"
+  },
+  "datasets": [
+   {
+    "name": "Resonance frequency",
+    "metric": "RMSE (GHz)",
+    "hybrid": 0.0082,
+    "best": 0.0131,
+    "best_name": "ANFIS-HB",
+    "lower": true,
+    "rel": 37.40458015267175,
+    "diff": null
+   },
+   {
+    "name": "S11",
+    "metric": "RMSE (dB)",
+    "hybrid": 0.0047,
+    "best": 0.0086,
+    "best_name": "ANFIS-HB",
+    "lower": true,
+    "rel": 45.348837209302324,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L7",
+  "key": "wei",
+  "label": "Wei et al.",
+  "year": 2025,
+  "domain": "3 stocks",
+  "hybrid": "MOEBS-Transformer",
+  "baselines": "CNN, LSTM, GRU, Transformer (RS/GS/BO-tuned)",
+  "financial": true,
+  "checklist": {
+   "split": "Not stated",
+   "test_isolated": "No",
+   "repeated_runs": "Partly",
+   "significance": "Partly",
+   "runtime": "Not stated",
+   "baseline_tuned": "Yes"
+  },
+  "datasets": [
+   {
+    "name": "Amazon",
+    "metric": "Test RMSE",
+    "hybrid": 52.5328,
+    "best": 53.7565,
+    "best_name": "BO-Transformer",
+    "lower": true,
+    "rel": 2.2763758801261256,
+    "diff": null
+   },
+   {
+    "name": "Google",
+    "metric": "Test RMSE",
+    "hybrid": 33.9834,
+    "best": 34.1159,
+    "best_name": "Transformer (default)",
+    "lower": true,
+    "rel": 0.38838195680020243,
+    "diff": null
+   },
+   {
+    "name": "Uniqlo",
+    "metric": "Test RMSE",
+    "hybrid": 996.7573,
+    "best": 1036.6555,
+    "best_name": "Transformer (default, Table 12)",
+    "lower": true,
+    "rel": 3.8487424221450697,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "L8",
+  "key": "zhu",
+  "label": "Zhu et al.",
+  "year": 2026,
+  "domain": "Weekly influenza cases",
+  "hybrid": "PSO-weighted ANFIS+LSTM+LSSVM ensemble",
+  "baselines": "ANFIS, LSTM, LSSVM",
+  "financial": false,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Partly",
+   "repeated_runs": "Partly",
+   "significance": "Not stated",
+   "runtime": "Not stated",
+   "baseline_tuned": "Yes"
+  },
+  "datasets": [
+   {
+    "name": "Single series (test)",
+    "metric": "RMSE",
+    "hybrid": 808.69,
+    "best": 848.42,
+    "best_name": "LSSVM",
+    "lower": true,
+    "rel": 4.682822187124291,
+    "diff": null
+   },
+   {
+    "name": "Multi-source (test)",
+    "metric": "RMSE",
+    "hybrid": 701.02,
+    "best": 711.54,
+    "best_name": "LSSVM",
+    "lower": true,
+    "rel": 1.4784832897658575,
+    "diff": null
+   }
+  ],
+  "ref": null
+ },
+ {
+  "id": "X1",
+  "key": "huiyong",
+  "label": "Huiyong & Wang",
+  "year": 2025,
+  "domain": "3 Chinese A-shares",
+  "hybrid": "GA-WOA-LSTM",
+  "baselines": "BP, CNN, RNN, LSTM",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Not stated",
+   "repeated_runs": "No",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "No"
+  },
+  "datasets": [
+   {
+    "name": "V V (600300)",
+    "metric": "RMSE",
+    "hybrid": 0.0706,
+    "best": 0.112,
+    "best_name": "LSTM",
+    "lower": true,
+    "rel": 36.96428571428572,
+    "diff": null
+   },
+   {
+    "name": "LOTUS HOLDINGS (600186)",
+    "metric": "RMSE",
+    "hybrid": 0.1842,
+    "best": 0.3462,
+    "best_name": "LSTM",
+    "lower": true,
+    "rel": 46.79376083188908,
+    "diff": null
+   },
+   {
+    "name": "SANYUAN (600429)",
+    "metric": "RMSE",
+    "hybrid": 0.0847,
+    "best": 0.1125,
+    "best_name": "LSTM",
+    "lower": true,
+    "rel": 24.711111111111116,
+    "diff": null
+   }
+  ],
+  "ref": "W. Huiyong and Z. Wang, \"Stock market forecasting research based on GA-WOA-LSTM,\" PLoS ONE, vol. 20, no. 8, Art. no. e0330324, 2025, doi: 10.1371/journal.pone.0330324."
+ },
+ {
+  "id": "X2",
+  "key": "chen",
+  "label": "Chen et al.",
+  "year": 2024,
+  "domain": "2 Chinese bank stocks",
+  "hybrid": "CEEMDAN + attention BiGRU + IPSO",
+  "baselines": "LSTM, GRU, BiGRU",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Not stated",
+   "repeated_runs": "No",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "Shanghai Pudong Development Bank",
+    "metric": "RMSE",
+    "hybrid": 0.0598,
+    "best": 0.0912,
+    "best_name": "BiGRU",
+    "lower": true,
+    "rel": 34.42982456140351,
+    "diff": null
+   },
+   {
+    "name": "Ping An Bank",
+    "metric": "RMSE",
+    "hybrid": 0.0527,
+    "best": 0.0916,
+    "best_name": "BiGRU",
+    "lower": true,
+    "rel": 42.467248908296945,
+    "diff": null
+   }
+  ],
+  "ref": "X. Chen, F. Yang, Q. Sun and W. Yi, \"Research on stock prediction based on CED-PSO-StockNet time series model,\" Scientific Reports, vol. 14, Art. no. 27462, 2024, doi: 10.1038/s41598-024-78984-1."
+ },
+ {
+  "id": "X3",
+  "key": "egrioglu",
+  "label": "Egrioglu et al.",
+  "year": 2026,
+  "domain": "Nasdaq index",
+  "hybrid": "PSO-trained spiking Pi-Sigma ANN",
+  "baselines": "MLP, LSTM, GRU, SRNN, DNM-ANN, ...",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Yes",
+   "repeated_runs": "Yes",
+   "significance": "Yes",
+   "runtime": "Not stated",
+   "baseline_tuned": "Yes"
+  },
+  "datasets": [
+   {
+    "name": "Nasdaq TS1, ntest=10 (mean RMSE)",
+    "metric": "RMSE",
+    "hybrid": 102.8528,
+    "best": 99.8028,
+    "best_name": "DNM-ANN (best gradient-trained: LSTM/MLP 105.8885)",
+    "lower": true,
+    "rel": -3.0560264842268925,
+    "diff": null
+   },
+   {
+    "name": "Nasdaq TS1, ntest=20 (mean RMSE)",
+    "metric": "RMSE",
+    "hybrid": 139.8336,
+    "best": 137.169,
+    "best_name": "DNM-ANN (best gradient-trained: GRU 147.1177)",
+    "lower": true,
+    "rel": -1.9425671981278412,
+    "diff": null
+   },
+   {
+    "name": "Nasdaq TS1, ntest=30 (mean RMSE)",
+    "metric": "RMSE",
+    "hybrid": 148.0375,
+    "best": 148.6619,
+    "best_name": "DNM-ANN (best gradient-trained: GRU 150.3089)",
+    "lower": true,
+    "rel": 0.42001346679950174,
+    "diff": null
+   }
+  ],
+  "ref": "E. Egrioglu, E. Bas and G. Albayrak, \"Forecasting Nasdaq stock exchange time series using an improved recurrent spiking Pi-Sigma artificial neural network,\" Scientific Reports, vol. 16, Art. no. 18593, 2026, doi: 10.1038/s41598-026-49954-6."
+ },
+ {
+  "id": "X4",
+  "key": "bagalkot",
+  "label": "Bagalkot et al.",
+  "year": 2024,
+  "domain": "8 NSE stocks",
+  "hybrid": "GWO-tuned GARCH/ARIMA",
+  "baselines": "ARIMA, GARCH",
+  "financial": true,
+  "checklist": {
+   "split": "Not stated",
+   "test_isolated": "Not stated",
+   "repeated_runs": "No",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "No"
+  },
+  "datasets": [
+   {
+    "name": "HDFC Bank",
+    "metric": "RMSE",
+    "hybrid": 0.13,
+    "best": 0.28,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 53.57142857142857,
+    "diff": null
+   },
+   {
+    "name": "Axis Bank",
+    "metric": "RMSE",
+    "hybrid": 0.31,
+    "best": 0.41,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 24.39024390243902,
+    "diff": null
+   },
+   {
+    "name": "SBIN",
+    "metric": "RMSE",
+    "hybrid": 0.38,
+    "best": 0.5,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 24.0,
+    "diff": null
+   },
+   {
+    "name": "Adani",
+    "metric": "RMSE",
+    "hybrid": 0.45,
+    "best": 0.59,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 23.728813559322028,
+    "diff": null
+   },
+   {
+    "name": "Infosys",
+    "metric": "RMSE",
+    "hybrid": 0.23,
+    "best": 0.3,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 23.33333333333333,
+    "diff": null
+   },
+   {
+    "name": "TCS",
+    "metric": "RMSE",
+    "hybrid": 0.25,
+    "best": 0.35,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 28.571428571428566,
+    "diff": null
+   },
+   {
+    "name": "SunPharma",
+    "metric": "RMSE",
+    "hybrid": 0.23,
+    "best": 0.29,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 20.689655172413783,
+    "diff": null
+   },
+   {
+    "name": "NatcoPharma",
+    "metric": "RMSE",
+    "hybrid": 0.4,
+    "best": 0.45,
+    "best_name": "GARCH",
+    "lower": true,
+    "rel": 11.111111111111107,
+    "diff": null
+   }
+  ],
+  "ref": "S. S. Bagalkot, D. H. A and N. Naik, \"Novel grey wolf optimizer based parameters selection for GARCH and ARIMA models for stock price prediction,\" PeerJ Computer Science, vol. 10, Art. no. e1735, 2024, doi: 10.7717/peerj-cs.1735."
+ },
+ {
+  "id": "X5",
+  "key": "song",
+  "label": "Song",
+  "year": 2024,
+  "domain": "Construction stocks (TSE)",
+  "hybrid": "Cuckoo-search-weighted ANN+GPR+CART",
+  "baselines": "LSTM, RF, GBM",
+  "financial": true,
+  "checklist": {
+   "split": "No",
+   "test_isolated": "Not stated",
+   "repeated_runs": "Yes",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "Construction stocks, daily",
+    "metric": "RMSE",
+    "hybrid": 7.4262,
+    "best": 8.534,
+    "best_name": "LSTM",
+    "lower": true,
+    "rel": 12.981017108038445,
+    "diff": null
+   },
+   {
+    "name": "Construction stocks, weekly",
+    "metric": "RMSE",
+    "hybrid": 7.6179,
+    "best": 10.385,
+    "best_name": "LSTM",
+    "lower": true,
+    "rel": 26.645161290322584,
+    "diff": null
+   }
+  ],
+  "ref": "X. Song, \"Predicting stock price of construction companies using weighted ensemble learning,\" Heliyon, vol. 10, no. 11, Art. no. e31604, 2024, doi: 10.1016/j.heliyon.2024.e31604."
+ },
+ {
+  "id": "X6",
+  "key": "tissaoui",
+  "label": "Tissaoui et al.",
+  "year": 2024,
+  "domain": "VIX volatility",
+  "hybrid": "PSO-tuned transfer-function model",
+  "baselines": "AR, ARIMAX, ARFIMAX, LSTM, GRU, CNN",
+  "financial": true,
+  "checklist": {
+   "split": "Not stated",
+   "test_isolated": "Yes",
+   "repeated_runs": "No",
+   "significance": "Partly",
+   "runtime": "No",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "CBOE VIX (validation, best run)",
+    "metric": "RMSE",
+    "hybrid": 0.7361,
+    "best": 1.21,
+    "best_name": "GRU",
+    "lower": true,
+    "rel": 39.16528925619835,
+    "diff": null
+   }
+  ],
+  "ref": "K. Tissaoui, S. Boubaker, B. Hkiri and N. Azibi, \"Multi-model transfer function approach tuned by PSO for predicting stock market implied volatility explained by uncertainty indexes,\" Scientific Reports, vol. 14, Art. no. 22711, 2024, doi: 10.1038/s41598-024-74456-8."
+ },
+ {
+  "id": "X7",
+  "key": "li",
+  "label": "Li et al.",
+  "year": 2024,
+  "domain": "China A-share returns",
+  "hybrid": "Symbolic GP features + LSTM",
+  "baselines": "LSTM, MLP, published LSTMs",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Yes",
+   "repeated_runs": "No",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "Not stated"
+  },
+  "datasets": [
+   {
+    "name": "Whole-sample test (Table 4)",
+    "metric": "Rank IC (%)",
+    "hybrid": 9.3,
+    "best": 10.7,
+    "best_name": "Ghosh three-feature LSTM",
+    "lower": false,
+    "rel": null,
+    "diff": -1.3999999999999986
+   },
+   {
+    "name": "Fundamental indicators 2020-22 avg (text, Fig. 8)",
+    "metric": "|IC| (%)",
+    "hybrid": 7.98,
+    "best": 1.85,
+    "best_name": "LSTM",
+    "lower": false,
+    "rel": null,
+    "diff": 6.130000000000001
+   }
+  ],
+  "ref": "Q. Li, N. Kamaruddin, S. S. Yuhaniz and H. A. A. Al-Jaifi, \"Forecasting stock prices changes using long-short term memory neural network with symbolic genetic programming,\" Scientific Reports, vol. 14, Art. no. 422, 2024, doi: 10.1038/s41598-023-50783-0."
+ },
+ {
+  "id": "X8",
+  "key": "contreras",
+  "label": "Contreras et al.",
+  "year": 2024,
+  "domain": "Bitcoin, Ibovespa, Vale direction",
+  "hybrid": "GA feature selection + SVM/DT/KNN",
+  "baselines": "SVM, DT, KNN",
+  "financial": true,
+  "checklist": {
+   "split": "Yes",
+   "test_isolated": "Yes",
+   "repeated_runs": "Yes",
+   "significance": "No",
+   "runtime": "No",
+   "baseline_tuned": "Yes"
+  },
+  "datasets": [
+   {
+    "name": "Ibovespa E2-I1",
+    "metric": "AUROC",
+    "hybrid": 0.62,
+    "best": 0.56,
+    "best_name": "no feature selection",
+    "lower": false,
+    "rel": null,
+    "diff": 0.05999999999999994
+   },
+   {
+    "name": "Ibovespa E2-I2",
+    "metric": "AUROC",
+    "hybrid": 0.58,
+    "best": 0.61,
+    "best_name": "no feature selection",
+    "lower": false,
+    "rel": null,
+    "diff": -0.030000000000000027
+   },
+   {
+    "name": "Vale E3-I1",
+    "metric": "AUROC",
+    "hybrid": 0.57,
+    "best": 0.57,
+    "best_name": "no feature selection",
+    "lower": false,
+    "rel": null,
+    "diff": 0.0
+   },
+   {
+    "name": "Vale E3-I2",
+    "metric": "AUROC",
+    "hybrid": 0.57,
+    "best": 0.58,
+    "best_name": "no feature selection",
+    "lower": false,
+    "rel": null,
+    "diff": -0.010000000000000009
+   }
+  ],
+  "ref": "R. C. Contreras et al., \"Genetic algorithm for feature selection applied to financial time series monotonicity prediction: Experimental cases in cryptocurrencies and Brazilian assets,\" Entropy, vol. 26, no. 3, Art. no. 177, 2024, doi: 10.3390/e26030177."
+ }
+]

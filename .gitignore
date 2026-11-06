@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+# raw prices are downloaded by fetch_data.py, not redistributed
+data/*.csv
+# per-run outputs (download raw-results.zip from the GitHub release instead)
+results/mh/
+results/base/
+*.log
+.DS_Store
+Thumbs.db
